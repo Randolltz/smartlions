@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+  background-image: url('../img/fondo\ pagina.png');
+}
+
+
+
+
+
+.header {
+  grid-area: header;
+  background-color:#041c329f;
+  
+}
+
+
+.logo img {
+  
+  position: relative;
+  right: 94px;
+  width: 30px;
+  height: 30px;
+}
+
+
+h4 {
+  font-size: 13px;
+  color: rgb(68, 153, 125);
+  display: flex;
+  justify-content: center;
+}
+
+
+h1 {
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  bottom: 34px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 23px;
+  color: azure;
+  display: flex;
+  justify-content: center;
+}
+
+.navmenu{
+  grid-area: navbar;
+  background-color: #041c329f;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.navmenu li{
+  font-size: 14px;
+  list-style: none;
+  display: inline-block;
+  font-weight: bold;
+  padding: 1;
+  
+  
+  
+}
+
+.navmenu li a{
+  padding: 2px;
+  text-decoration: none;
+  color: #e7e7e7;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 2px ;
+  background-color: #281e4d;
+  
+}
+
+
+
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #041c329f;
+  
+}
+
+
+
+.main {
+  grid-area: main;
+  background-color: #041c329f;
+  
+  
+  
+}
+
+.imagenes a img {
+
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  align-content: center;
+  
+  
+  
+  
+}
+
+
+
+
+.footer {
+  grid-area: footer;
+  background-color: #041c329f;
+  color: aliceblue;
+  font-size: 8px;
+}
+
+
+
+.imagcelulares img {
+  margin: 10px;
+  width: 80px;
+  height: 80px; 
+}
+
+.frase {
+  font-size: 14px;
+  background-color: #56df6d;
+  text-align: center;
+  
+}
+
+.estamos {
+  color: #e7e7e7;
+  font-size: 11px;
+  position: relative;
+  text-align: center;
+}
+
+.formulario p {
+  color: #e7e7e7;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;    
+}
+
+.formulario input {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.imagenesofertas {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  color: #56df6d;
+  
+}
+
+h3 {
+  color: #56df6d;
+  text-align: center;
+  font-size: 15px;
+}
+
+.imagenesofertas img {
+
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.upssorteos {
+  color: #56df6d;
+  font-size: 10px;
+  text-align: center;
+  
+}
+
+
+/* Grid mobile*/
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header"  40px
+    "navbar"  50px
+    "main"    auto
+    "sidebar" auto
+    "footer"  100px;
+
+}
+
+
+@media (min-width: 800px) {
+  .grid-container {
+    grid-template:
+      "header  header header"  100px
+      "navbar  main   sidebar" 100px
+      "footer  footer footer"  100px /
+      200px    auto   200px;
+  }
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+    /* grid-template-columns: 200px auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: 
+    "header  header"
+    "navbar  navbar"
+    "sidebar main"
+    "footer  footer"; */
+
+    grid-template:
+      "header  header" 100px
+      "navbar  navbar" 50px
+      "main main " auto
+      "sidebar sidebar" auto
+      
+      "footer footer" 100px /
+      200px    auto;
+  }
+}
+
