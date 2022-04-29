@@ -51,7 +51,21 @@ h1 {
   position: relative;
   bottom: 34px;
   text-align: center;
+  transform: skew(15deg);
+  animation-name: mianimacion;
+  animation-duration: 2s;
+
+
 }
+
+@keyframes mianimacion {
+0% {background:#56df6d}
+50%{ background: chocolate;}
+75% {background: aqua;}
+
+
+}
+
 
 h2 {
   font-size: 23px;
@@ -66,7 +80,12 @@ h2 {
   display: flex;
   justify-content: center;
   
+  
+  
 }
+
+
+
 
 .navmenu li{
   font-size: 14px;
@@ -74,10 +93,14 @@ h2 {
   display: inline-block;
   font-weight: bold;
   padding: 1;
-  
-  
+
+
+
   
 }
+
+
+
 
 .navmenu li a{
   padding: 2px;
@@ -86,10 +109,15 @@ h2 {
   text-decoration: none;
   font-size: 14px;
   border-radius: 2px ;
-  background-color: #281e4d;
+  
+  
   
 }
 
+.navmenu li a:hover{
+background-color: #6ec97d;
+
+}
 
 
 
