@@ -74,49 +74,10 @@ h2 {
   justify-content: center;
 }
 
-.navmenu{
-  grid-area: navbar;
-  background-color: #041c329f;
-  display: flex;
-  justify-content: center;
-  
-  
-  
+.navbar div ul li a{
+  background-color: #e7e7e7;
+  color: #56df6d;
 }
-
-
-
-
-.navmenu li{
-  font-size: 14px;
-  list-style: none;
-  display: inline-block;
-  font-weight: bold;
-  padding: 1;
-
-  
-}
-
-
-
-
-.navmenu li a{
-  padding: 2px;
-  text-decoration: none;
-  color: #e7e7e7;
-  text-decoration: none;
-  font-size: 14px;
-  border-radius: 2px ;
-  
-  
-  
-}
-
-.navmenu li a:hover{
-background-color: #6ec97d;
-
-}
-
 
 
 .sidebar {
@@ -137,12 +98,9 @@ background-color: #6ec97d;
 
 .imagenes a img {
 
-  width: 60px;
-  height: 60px;
-  padding: 10px;
-  align-content: center;
-  
-  
+  width: 80px;
+  height: 80px;
+  padding: 15px;
   
   
 }
@@ -265,4 +223,3 @@ h3 {
       200px    auto;
   }
 }
-
