@@ -2,3 +2,24 @@ h1 {
 color: #58a1a1;
 
 }
+
+// Extend
+
+.boton {
+    width: 50px;
+    height: 20px;
+    background-color: aqua;
+    text-align: center;
+    color: antiquewhite;
+    border-radius: 20px;
+    border: 1px solid black;
+
+}
+
+//Mixins
+
+@mixin size($salto, $ancho, $margin) {
+    height: $alto;
+    width: $ancho;
+    margin: $margin;
+}
